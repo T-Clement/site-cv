@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Clément Toquet</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a class="logo" href="#Accueil" title="Clément Toquet"><em class="logo-border">&lt;CT/&gt;</em></a>
+            <div class="hamburger-menu"> <!--à renommer ?   -->
+                <svg class="hamburger-ico" xmlns="http://www.w3.org/2000./svg" viewBox="0 0 448 512"><path fill="#FFD300" 
+                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 
+                    256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 
+                    17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                </svg>            
+                <ul class="navbar-lst navbar-desktop-lst uppercase">
+                    <li class="navbar-itm navbar-desktop-itm"><a class="navbar-lnk navbar-lnk-active" href="#">Accueil</a></li>
+                    <li class="navbar-itm navbar-desktop-itm"><a class="navbar-lnk" href="projects.html">Mes Projets</a></li>
+                    <li class="navbar-itm navbar-desktop-itm"><a class="navbar-lnk" href="contact.html">Contact</a></li>
+                </ul>  
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- enlever le disable dans les listes + mettre active dans le div.tile-wrapper -->
+
+    <main class="container container-desktop">
+        <section class="tile-container tile-desktop-container">     <!--container ?-->
+            <article class="tile">
+                <div class="tile-wrapper active">  
+                    <h1 class="tile-ttl active">à propos de moi</h2>
+                    <div class="tile-txt-wrapper">
+                        <p class="tile-txt">Moi, c'est Clément. J'ai découvert le développement en auto-didacte en fin d'année 2022.</p>
+                        <p class="tile-txt">Après le suivi d'une formation en développement web / web mobile en 2023, je suis disponible pour travailler avec vous.</p>
+                        <p>Mon parcours dans le domaine éducatif me permet d'apporter un plus à vos projets.</p>
+                        
+                        <div class="tile-small tile-wrapper">
+                            <h3 class="tile-ttl">Mes passions</h3>
+                            <p class="tile-txt">J'aime le sport, la cuisine et la chiptune.</p>
+                            <p>J'aime aussi transmettre mes connaissances.</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="tile-svg-desktop">
+                    <img class="tile-svg" src="svg/tile-cross.svg">
+                    <img class="tile-svg" src="svg/tile-bar.svg">   
+                </div>
+            </article>
+
+            <div class="tiles-container">
+                <article class="tile">
+                    <div class="tile-wrapper">     <!--ajouter "active" pour que le séparateur apparaisse-->
+                        <h2 class="tile-ttl">Compétences</h2>  
+                        <div class="tile-txt-wrapper">
+                            <ul class="tile-lst disable">    <!--enlever le "disable" pour faire déplier-->
+                                <li class="tile-lst-item">Empathie</li>
+                                <li class="tile-lst-item">Curiosité</li>
+                                <li class="tile-lst-item">Rigueur</li>
+                                <li class="tile-lst-item">Travail d'équipe</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tile-svg-desktop">
+                        <img class="tile-svg" src="svg/tile-cross.svg">
+                        <img class="tile-svg disable" src="svg/tile-bar.svg">   
+                    </div>
+                </article>
+    
+    
+                <article class="tile">
+                    <div class="tile-wrapper">
+                        <h2 class="tile-ttl">Expériences</h2> <!--ajouter "active" pour que le séparateur apparaisse-->
+                        <div class="tile-txt-wrapper">
+                            <ul class="tile-lst disable">  <!--enlever le "disable" pour faire déplier-->
+                                <li class="tile-lst-item">Formation Dev Web / Web Mobile</li>
+                                <li class="tile-lst-item">Assistant d'Education</li>
+                                <li class="tile-lst-item">Stages écoles primaires</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tile-svg-desktop">
+                        <img class="tile-svg" src="svg/tile-cross.svg">
+                        <img class="tile-svg disable" src="svg/tile-bar.svg">
+                    </div>
+                </article>       
+            </div>
+        </section>
+
+        <section class="project">
+            <div class="project-wrapper">
+                <a href="projects.html" class="project-btn project-desktop-btn btn uppercase">Mes Projets</a>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <ul class="footer-list">
+            <li class="footer-item"><a class="footer-lnk" href="mentions-légales.html">Mentions Légales</a></li>
+            <li class="footer-item"><a class="footer-lnk" href="contact.html">Contactez moi</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- autre façon, faire sans container avec les marges qui sont mises dans chaques sections /
+    parties de la page
+    
+    
+    bloquer la taille à partir d'un certain moment + marges dynamiques pour avoir toujours les éléments centrés
+    
+    ->
